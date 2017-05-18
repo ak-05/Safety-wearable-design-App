@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tcoe</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="devices">Your Devices</string>
+    <string name="emergency">Raise Alarm</string>
+    <string name="edit_profile">Profile</string>
+    <string name="add_contacts">add contacts</string>
+</resources>

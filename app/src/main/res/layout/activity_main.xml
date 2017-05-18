@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.siddharth.tcoe.MainActivity"
+    android:id="@+id/mainActivity_layout"
+    android:background="@drawable/clenched_fist">
+
+    <Button
+        android:id="@+id/emergency_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="emergency"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:text="Raise Alarm !" />
+
+    <Button
+        android:id="@+id/contacts_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emergency_button"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:layout_below="@+id/emergency_button"
+        android:onClick="contacts"
+        android:text="@string/emergency_contacts" />
+
+    <Button
+        android:id="@+id/profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:onClick="changeProfile"
+        android:text="@string/edit_profile"
+        android:layout_alignStart="@+id/contacts_button"
+        android:layout_below="@+id/contacts_button" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/profile_button"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:layout_below="@+id/profile_button"
+        android:onClick="editProfile"
+        android:text="Add Contacts" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Contacts"
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/contacts_button"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:layout_alignParentEnd="true"
+        android:onClick="deleteAll"
+        android:nestedScrollingEnabled="false" />
+
+
+</RelativeLayout>
